@@ -10,7 +10,7 @@
         <!--Titulo-->
         <title>Sol Andrada | Mi portafolio</title>
         <!--Favicon-->
-        <link rel="icon" type="image/x-icon" href="images/code-square.svg">
+        <link rel="icon" type="image/x-icon" href="images/sol-icon.svg">
         <!--Bootstrap css-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <!--Bootstrap icons-->
@@ -20,20 +20,47 @@
         <!--fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Quicksand:wght@500&family=Roboto:ital,wght@1,100&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond&family=Quicksand:wght@500&family=Roboto:ital,wght@1,100&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     </head>
-   
     <body>
         <!--Barra de Navegacion-->
-        <nav class="navbar navbar-expand-md navbar-light">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#hero">
+                <img src="images/sol-icon.svg" width="50" alt="logo sol">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav> 
+
+
+
+
+
+         
+
+        <!-- <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbar-toggler">
-                <a class="navbar-brand" href="#">
-                    <img src="images/code-square.svg" alt="Icono de la web">
-                </a>
                 <ul class="navbar-nav d-flex justify-content-center align-item-center">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mi</a>
@@ -48,14 +75,14 @@
                 </ul>
               </div>
             </div>
-          </nav>
+          </nav> -->
 
         <!--Seccion Hero-->
         <section id="hero" class="hero align-items-stretch">
            <div class="hero-principal d-flex flex-column justify-content-center align-item-center">
             <img class="hero-imagen-desarrollador rounder-circle" src="images/fotiscaris.jpg" alt="foto de mi carita">
-            <h1>HOLA, SOY SOL ANDRADA</h1>
-            <h2>Estudiante de desarrollo de software | apasionada por el desarrollo web y sistemas</h2>
+            <h1 class="saludo">HOLA, SOY SOL ANDRADA</h1>
+            <h2 class="saludo2">Estudiante de desarrollo de software | apasionada por el desarrollo web y sistemas</h2>
            </div> 
            <div class="hero-inferior">
             <img class="hero-inferior-imagen img-fluid" src="images/Pair programming Customizable Isometric Illustrations _ Amico Style.png" alt="Monitor, Laptop, logos de HTML, CSS, JavaScript y React">
@@ -80,12 +107,11 @@
                    <p class="experiencia-titulo">Desarrollo web</p> 
                    <p>Actualmente, cuento con conocimientos en desarrollo web front-end, estoy en constante aprendizaje para ampliar mis habilidades para poder aplicarlas en futuros proyectos. </p>
                     <div class="badges-contenedor">
-                        <span class="badge text-bg-primary">HTML</span>
-                        <span class="badge text-bg-primary">CSS</span>
-                        <span class="badge text-bg-primary">JavaScript</span>
-                        <span class="badge text-bg-primary">Bootstrap</span>
-                        <span class="badge text-bg-primary">C++</span>
-                        
+                        <span class="badge">HTML</span>
+                        <span class="badge">CSS</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">Bootstrap</span>
+                        <span class="badge">C++</span>
                     </div>
                 </div>
                 <!--Articulos-->
@@ -105,8 +131,8 @@
                    <p class="experiencia-titulo">Estudios</p> 
                    <p>Como principiante en desarrollo web, me estoy capacitando constantemente para ofrecer soluciones de calidad. Estoy comprometido en mejorar mis habilidades para el éxito de tu proyecto.</p>
                     <div class="badges-contenedor">
-                        <span class="badge text-bg-primary">Desarrollo web</span>
-                        <span class="badge text-bg-primary">Teclab</span>
+                        <span class="badge">Desarrollo web</span>
+                        <span class="badge">Teclab</span>
                      
                     </div>
                 </div>
@@ -128,10 +154,10 @@
                             <div class="overlay">
                                  <p>Mi primer portfolio</p>
                                  <div class="iconos-contenedor">
-                                    <a href="#" target="_blank" rel="noopener noreferrer"> 
+                                    <a href="https://github.com/Sol-Andrada/sol-andrada.github.io" target="_blank" rel="noopener noreferrer"> 
                                         <i class="bi bi-github"></i>
                                     </a>
-                                    <a href="" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://sol-andrada.github.io" target="_blank" rel="noopener noreferrer">
                                         <i class="bi bi-laptop"></i>
                                     </a>
                                  </div>
@@ -158,7 +184,7 @@
                       <!--Proyecto 3-->
                       <div class="col-12 col-md-6 col-lg-4">
                         <div class="proyecto">
-                            <img src="images/proyecto1.png" alt="proyecto 1">
+                            <img src="images/proyecto2.png" alt="proyecto 1">
                             <div class="overlay">
                                  <p>Proximamente</p>
                                  <div class="iconos-contenedor">
@@ -340,7 +366,7 @@
 
     <!--Footer-->
     <footer class="seccion-oscura d-flex flex-column align-item-center justify-content-center">
-        <img class="footer-logo" src="images/icono-blanco.svg">
+        <img class="footer-logo" src="images/sol-icon.svg">
         <p class="footer-texto text-center">Aprendo y creo todos los dias<br>Creemos un proyecto juntos</p>
         <div class="iconos-redes-sociales d-flex flex-wrap align-item-center justify-content-center">
             <a href="https://github.com/Sol-Andrada" target="_blank" rel="noopener noreferrer">
