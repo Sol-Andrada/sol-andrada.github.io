@@ -1,13 +1,33 @@
+/*Variables*/
+:root{
+    
+    --color-morado: #a45ea4;
+    --color-gris:#383b44;
+    --color-blanco:#faf9f6;
+    --color-nav: #8a979d93; 
+
+}
+
 /*Barra de navegacion*/
+
 .navbar{
-    padding: 2rem;
-    background-color: #f5f6f7;
+    padding: 10px;
+    background-color: var(--color-nav) !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+   
+    
 
 }
 .navbar-collapse{
     align-items: center;
-    justify-content: space-between;
-}
+    justify-content: flex-end;
+   
+} 
+
 
 
 /*Estilos generales*/
@@ -18,31 +38,31 @@ section{
     justify-content: center;
 }
 h1{
-    font-size: 48px;
-    font-family: 'Cormorant Garamond', cursive;
+    font-size: 80px;
+    font-family: 'Bebas Neue', cursive;
     font-weight: bold;
 }
 h2{
-    font-family: 'Roboto';
+    font-family: 'Bebas Neue', cursive;
     font-weight: bolder;
     font-size: 35px;
 }
 .seccion-oscura{
-    background-color: #383b44;
+    background-color: var(--color-gris);
     color: white;
 }
 .seccion-clara{
     color: black;
-    background-color: white;
+    background-color: var(--color-blanco);
 }
 .seccion-titulo{
     font-size: 2rem;
     padding: 15px 0;
-    font-family: "Cormorant Garamond", cursive;
+    font-family: "Bebas Neue", cursive;
 }
 .seccion-descripcion{
     font-size: 1.2rem;
-    color: #584e4e;
+    color: var(--color-gris);
 }
 .seccion-texto{
     font-size: 1.2rem;
@@ -56,12 +76,63 @@ h2{
     color: black;
 
 }
-.texto-blanco{
 
-}
+
 /*Seccion Hero*/
+
+
+.saludo{
+    transform: scale(0.8);
+    animation: scale 2s forwards;
+}
+
+@keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+.saludo {
+    opacity: 0;
+    filter: blur(4px);
+  }
+  .saludo:nth-child(N) {
+    animation: fade-in 0.5s 0s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  } 
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+
+  .saludo2{
+    transform: scale(0.8);
+    animation: scale 3s forwards;
+}
+
+@keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+.saludo2 {
+    opacity: 0;
+    filter: blur(4px);
+  }
+  .saludo2:nth-child(N) {
+    animation: fade-in 0.6s 0s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  } 
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+
 .hero{
-    background-color: #f5f6f7;
+    background-color: var(--color-blanco);
     min-height: 450px;
     text-align: center;
 }
@@ -72,7 +143,7 @@ h2{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin: 20px auto;
+    margin: 50px auto; /*aca*/
 }
 .hero-principal h2{
     font-size: 1.5rem;
@@ -93,23 +164,26 @@ h2{
 .experiencia{
     padding: 60px 60px 80px 60px;
 }
+.columna {
+    margin:20px
+}
 .experiencia .columna{
     padding-bottom: 20px;
     border: 2px solid #8080804d;
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center;
+    
     transition: all 0.2s ease-in;
 }
 .experiencia .columna:hover{
     color: white;
-    background-color:#1b1b32;
+    background-color:var(--color-gris);
 }
 .experiencia i{
     font-size: 2.5rem;
-    color: #ad53c9;
-    background-color: #02021a;
+    color: var(--color-morado);
+    background-color: var(--color-gris);
     padding: 8px 19px;
     border-radius: 50%;
 
@@ -124,7 +198,8 @@ h2{
     font-weight: bold;
     margin: 10px 0;
 }
-.badges{
+.badge{
+    background-color:var(--color-morado);
     margin: 5px;
 }
 
@@ -177,7 +252,7 @@ h2{
     margin: 10px;
 }
 
-.articulos{
+/* .articulos{
     min-height: 500px;
     padding: 30px;
 }
@@ -188,9 +263,9 @@ h2{
 }
 .articulos .card-header{
     font-weight: bold;
-}
+} */
 
-/*testimonios*/
+/*testimonios
 .testimonios{
     padding: 40px 40px 80px 40px;
 
@@ -235,6 +310,7 @@ h2{
     font-size: 0.9rem;
     color:#656060;
 }
+*/
 
 /*Contactos*/
 .contacto .container{
@@ -244,9 +320,9 @@ h2{
 }
 .contacto .rectangulo{
     margin-top: -5rem;
-    background-color: rgb(167, 87, 187);
+    background-color: var(--color-morado);
     border-radius: 10px;
-    box-shadow: 0px 1px 4px 1px white;
+    box-shadow: 0px 1px 4px 1px rgb(45, 45, 45);
 }
 .contacto .row{
     width: 100%;
@@ -313,10 +389,11 @@ h2{
 }
 .iconos-redes-sociales a:hover{
     background-color: white;
-    border: 2px solid rgb(243, 42, 250);
+    border: 2px solid;
+    border-color:var(--color-morado);
 }
 .iconos-redes-sociales a:hover i{
-    color: black;
+    color: var(--color-morado);
 }
 .derechos-de-autor{
     font-size: 15px;
@@ -356,4 +433,7 @@ h2{
         font-size: 18px;
     }
 
+}
+body{
+    background-color: var(--color-morado);
 }
